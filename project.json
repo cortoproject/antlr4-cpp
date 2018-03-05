@@ -1,0 +1,14 @@
+{
+    "id": "antlr4/cpp",
+    "type": "package",
+    "value": {
+        "description": "Bake port of antlr4 c++ library",
+        "author": "Mike Lischke",
+        "version": "4.7.1",
+        "language": "c",
+        "c4cpp": true,
+        "include": ["src"],
+        "license": "BSD 3",
+        "managed": false
+    }
+}
