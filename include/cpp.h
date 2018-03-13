@@ -2,7 +2,7 @@
 #ifndef ANTLR4_H
 #define ANTLR4_H
 
-/* Add include files here */
+#include "antlr4-runtime.h"
 
 #ifdef __cplusplus
 extern "C" {
@@ -15,4 +15,3 @@ extern "C" {
 #endif
 
 #endif /* ANTLR4_H */
-
