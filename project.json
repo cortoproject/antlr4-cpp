@@ -7,17 +7,28 @@
         "version": "4.7.1",
         "language": "c",
         "c4cpp": true,
-        "include": ["include", "include/atn", "include/dfa", "include/misc", "include/support", "include/tree"],
+        "include": [
+            "include", 
+            "include/atn", 
+            "include/dfa", 
+            "include/misc", 
+            "include/support", 
+            "include/tree",
+            "include/tree/xpath",
+            "include/tree/pattern"
+        ],
         "license": "BSD 3",
         "managed": false,
         "dependee": {
-            "include":  [
+            "include": [
                 "${locate include}",
                 "${locate include}/atn",
                 "${locate include}/dfa",
                 "${locate include}/misc",
                 "${locate include}/support",
-                "${locate include}/tree"
+                "${locate include}/tree",
+                "${locate include}/tree/xpath",
+                "${locate include}/tree/pattern"
             ]
         }
     }
