@@ -5,7 +5,8 @@
         "description": "Bake port of antlr4 c++ library",
         "author": "Mike Lischke",
         "version": "4.7.1",
-        "language": null,
+        "language": "c",
+        "keep_binary": true,
         "c4cpp": true,
         "include": [
             "include",
