@@ -8,6 +8,7 @@
         "language": "c",
         "keep_binary": true,
         "c4cpp": true,
+        "ldflags": ["-static-libstdc++"],
         "include": [
             "include",
             "include/atn",
