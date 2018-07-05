@@ -5,10 +5,11 @@
         "description": "Bake port of antlr4 c++ library",
         "author": "Mike Lischke",
         "version": "4.7.1",
+        "license": "BSD 3",
         "language": "c",
+        "managed": false,
         "keep_binary": true,
         "c4cpp": true,
-        "ldflags": ["-static-libstdc++"],
         "include": [
             "include",
             "include/atn",
@@ -19,8 +20,9 @@
             "include/tree/xpath",
             "include/tree/pattern"
         ],
-        "license": "BSD 3",
-        "managed": false,
+        "${os linux}": {
+            "ldflags": ["-static-libstdc++", "-static-libgcc"]  
+        },
         "dependee": {
             "include": [
                 "${locate include}",
