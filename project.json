@@ -1,15 +1,15 @@
 {
-    "id": "antlr4/cpp",
+    "id": "antlr4.cpp",
     "type": "package",
     "value": {
         "description": "Bake port of antlr4 C++ library",
         "author": "Mike Lischke",
         "version": "4.7.1",
         "license": "BSD 3",
-        "language": "c",
-        "managed": false,
-        "keep_binary": true,
-        "c4cpp": true,
+        "language": "c++",
+        "keep-binary": true
+    },
+    "lang.cpp": {
         "include": [
             "include",
             "include/atn",
@@ -21,11 +21,13 @@
             "include/tree/pattern"
         ],
         "${os linux}": {
-            "static_artefact": true
-        },
-        "dependee": {
+            "static": true
+        }
+    },
+    "dependee": {
+        "lang.cpp": {
             "${os linux}": {
-                "static_lib": ["antlr4_cpp"]
+                "static-lib": ["antlr4_cpp"]
             },
             "include": [
                 "${locate include}",
